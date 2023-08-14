@@ -1,8 +1,10 @@
 {
+  "private": true,
   "scripts": {
-    "dev": "npm run server:dev",
+    "dev": "vite --host",
     "prod": "npm run build && npm run server:prod",
     "build": "vite build",
+    "preview": "vite preview",
     "server:dev": "ts-node ./server/index.ts",
     "server:prod": "cross-env NODE_ENV=production ts-node ./server/index.ts"
   },
@@ -23,5 +25,8 @@
     "vite-plugin-ssr": "^0.4.135",
     "vue": "^3.2.33"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
 }

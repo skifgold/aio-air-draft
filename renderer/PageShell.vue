@@ -6,6 +6,7 @@
       </a>
       <Link href="/">Home</Link>
       <Link href="/about">About</Link>
+      <Link href="/flight-list">Flight list</Link>
     </div>
     <div class="content"><slot /></div>
   </div>
